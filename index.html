@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	  <script type="text/javascript">
+		  $(document).ready({
+		  	$(function() {
+		   		$( "#accordion" ).accordion(
+		   			animate: 200
+		   		);
+		  	});
+
+			// Getter
+			var animate = $( ".selector" ).accordion( "option", "animate" );
+			 
+			// Setter
+			$( ".selector" ).accordion( "option", "animate", 200 );
+		});
+	  </script>
+
+</head>
+<body>
+
+	<div id="accordion">
+		<h3>This is questions 1.</h3>
+			<div>
+				<p>
+					This is teh answer to question 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		<h3>This is questions 2.</h3>
+			<div>
+				<p>
+					This is teh answer to question 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>			
+	</div>	
+
+</body>
+</html>
